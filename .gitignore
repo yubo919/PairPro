@@ -1,0 +1,12 @@
+*.csproj
+*.pidb
+*.sln
+*.userprefs
+*.unityproj
+*.booproj
+.DS_Store
+Library/
+Temp/
+obj/Debug/
+LocalCache/
+*.apk
