@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &245646991 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4855405443882918, guid: 40aa0155cf30242e792d1e27a5b0af9e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2043450522}
 --- !u!1 &678246767
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,6 +353,39 @@ Transform:
   m_Father: {fileID: 998947372}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &950336639 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1479939417801246, guid: 40aa0155cf30242e792d1e27a5b0af9e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2043450522}
+--- !u!114 &950336641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 950336639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac305ee57a8d40af9c0c76d6b3b46a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _distance: 5
+  _rotateSpeed: 0.5
+  _camera: {fileID: 1785938594}
+  _modelTrans: {fileID: 245646991}
+  _speed: 0.5
+--- !u!114 &950336643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 950336639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4b83f4aebea4e9e921e926ca2dc83b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _PlayerController: {fileID: 0}
 --- !u!1 &998947371
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +588,11 @@ Transform:
   m_Father: {fileID: 998947372}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &1785938594 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20752869170985942, guid: 40aa0155cf30242e792d1e27a5b0af9e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2043450522}
 --- !u!1 &1862403971
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +800,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114310649657621860, guid: 40aa0155cf30242e792d1e27a5b0af9e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 40aa0155cf30242e792d1e27a5b0af9e, type: 2}
   m_IsPrefabParent: 0
